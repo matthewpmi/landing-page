@@ -21,13 +21,13 @@ body {
 
 .header-links a {
     color: #e5e7eb;
-    padding: 8px;
+    padding: 8px 0 8px 8px;
+    margin-left: 16px;
 }
 
 .header-links {
     display: flex;
     margin-left: auto;
-    padding: 16px;
 }
 
 ul {
@@ -72,10 +72,10 @@ a {
     background-color: #3882f6;
     color: white;
     padding: 0;
-    border-radius: 12px;
+    border-radius: 6px;
     border: none;
     flex: 0 0 auto;
-    height: 24px;
+    height: 32px;
     width: 100px;
 }
 
@@ -88,6 +88,8 @@ a {
 
 .hero-right img {
     height: 250px;
+    flex-grow: 1;
+    margin-left: 72px;
 }
 
 .information {
@@ -107,14 +109,14 @@ a {
 
 .box-container {
     display: flex;
-    width: 100%;
+    width: 1000px;
     justify-content: space-between;
+    flex-grow: 0;
 }
 
 .box-and {
     display:flex;
     flex-direction: column;
-    width: 100px;
 }
 
 .box {
@@ -127,4 +129,69 @@ a {
 .box-subtext {
     width: 150px;
     text-align: center;
+}
+
+.quote-box {
+    display: flex;
+    background: #e5e7eb;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+}
+
+.quote {
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    padding: 0 300px;
+    margin-bottom: 0;
+}
+
+.author {
+    color: #1f2937;
+    margin-left: auto;
+    padding: 0 300px;
+}
+
+.call-to-box {
+    display: flex;
+    padding: 50px 300px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.call-to {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background: #3882f6;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.call-sign-up {
+    background-color: #3882f6;
+    color: white;
+    padding: 0;
+    border-radius: 6px;
+    border: 1px solid white;
+    flex: 0 0 auto;
+    height: 32px;
+    width: 100px;
+}
+
+.footer {
+    height: 72px;
+    background: #1f2937;
+    display: flex;
+    align-items: center;
+    padding: 0 200px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
 }
